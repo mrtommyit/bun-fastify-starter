@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    // Environment setup & latest features
+    "lib": ["esnext"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "allowJs": true,
+
+    // Bundler mode
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+
+    // Best practices
+    "strict": true,
+    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+
+    // Some stricter flags (disabled by default)
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noPropertyAccessFromIndexSignature": false,
+    "baseUrl": "./",
+    "outDir": "dist",
+    "rootDir": "src"
+  },
+  "include": ["**/*.ts", "**/*.tsx", "./eslint.config.js"],
+  "exclude": ["node_modules"]
+}

@@ -3,11 +3,21 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "main": "dist/index.js",
+  "engines": {
+    "node": "22"
+  },
+  "author": "Mrtommyit",
   "scripts": {
     "dev": "bun run tsx src/server.ts",
-    "build": "bunx tsc",
+    "build": "bunx tsc --build",
     "start": "bun run dist/server.js",
     "watch": "bun --watch run dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --check **/*.ts",
+    "prettier:fix": "prettier --write **/*.ts",
     "prepare": "husky"
   },
   "dependencies": {
